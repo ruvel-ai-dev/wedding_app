@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Create Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Create Wedding Event</h1>
+    <form method="post">
+        <label>Event Name <input type="text" name="name"></label><br>
+        <label>Subevents (comma separated)
+            <input type="text" name="subevents">
+        </label><br>
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
