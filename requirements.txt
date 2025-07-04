@@ -1,0 +1,15 @@
+flask
+python-dotenv
+openai
+langchain
+langchain-community
+langchain-openai
+faiss-cpu
+azure-storage-blob
+python-docx
+python-pptx
+PyMuPDF
+PyPDF2
+
+docx
+qrcode
