@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+    <title>Upload Media</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Upload for {{ subevent }}</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <p><a href="{{ url_for('gallery', event_id=event_id, subevent=subevent) }}">View Gallery</a></p>
+</body>
+</html>
