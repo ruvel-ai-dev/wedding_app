@@ -45,7 +45,7 @@ def download_files_as_zip(container: str, files: Iterable[str]) -> io.BytesIO:
         for name in files:
             blob = service.get_blob_client(container=container, blob=name)
             data = blob.download_blob().readall()
-            zf.writestr(os.path.basename(name), data)
+            zf.writestr(name, data)
     buf.seek(0)
     return buf
 
