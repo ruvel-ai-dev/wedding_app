@@ -8,7 +8,12 @@ import zipfile
 from dataclasses import dataclass
 from typing import Iterable, List
 
-from azure.storage.blob import BlobServiceClient
+try:
+    from azure.storage.blob import BlobServiceClient
+except Exception:  # pragma: no cover - optional dependency may be missing
+    class BlobServiceClient:  # type: ignore
+        """Fallback dummy class used when azure dependency is unavailable."""
+        pass
 
 
 def get_blob_service() -> BlobServiceClient:
