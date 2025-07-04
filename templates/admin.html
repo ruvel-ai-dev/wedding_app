@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Admin - Event {{ event_id }}</h1>
+    <h2>QR Codes</h2>
+    <ul>
+    {% for img in qr_images %}
+        <li><img src="{{ url_for('static', filename=img) }}" alt="QR"></li>
+    {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('download_zip', event_id=event_id) }}">Download ZIP</a></p>
+</body>
+</html>
