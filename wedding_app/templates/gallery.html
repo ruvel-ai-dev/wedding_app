@@ -1,11 +1,22 @@
 <!doctype html>
 <html>
 <head>
-    <title>Wedding Uploads</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to the Wedding Upload Portal</h1>
-    <p><a href="{{ url_for('create_event') }}">Create New Wedding Event</a></p>
+    <h1>Gallery for {{ subevent }}</h1>
+    {% if urls %}
+    <div class="grid">
+        {% for url in urls %}
+        <div class="item">
+            <img src="{{ url }}" alt="media">
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No media uploaded yet.</p>
+    {% endif %}
+    <p><a href="{{ url_for('upload', event_id=event_id, subevent=subevent) }}">Upload more</a></p>
 </body>
 </html>
