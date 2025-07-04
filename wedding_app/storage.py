@@ -5,7 +5,6 @@ from __future__ import annotations
 import io
 import os
 import zipfile
-from dataclasses import dataclass
 from typing import Iterable, List
 
 try:
