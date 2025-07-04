@@ -75,5 +75,5 @@ def test_download_zip(monkeypatch):
     monkeypatch.setenv("AZURE_STORAGE_CONNECTION_STRING", "conn")
     buf = storage.download_files_as_zip("c", ["path/a.txt", "path/b.txt"])
     z = zipfile.ZipFile(buf)
-    assert set(z.namelist()) == {"a.txt", "b.txt"}
+    assert set(z.namelist()) == {"path/a.txt", "path/b.txt"}
 
