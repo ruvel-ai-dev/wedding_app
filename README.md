@@ -82,7 +82,7 @@ CONTAINER_NAME=weddingphotos
 
 ## License
 
-MIT License – use freely and adapt for weddings, events, and beyond.
+MIT License – adapt for weddings, events, and beyond.
 
 ---
 
