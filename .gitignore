@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Secrets
+.env
+.env.*
+
+# System files
+.DS_Store
+*.log
+
+# Optional temp folders
+docx-template/
