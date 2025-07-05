@@ -6,6 +6,10 @@ Used by a niche videography company as part of their in-house suite of products.
 
 ---
 
+![Wedding App Visual](https://github.com/ruvel-ai-dev/wedding_app/blob/main/Front%20End%20Visual.png?raw=true)
+
+---
+
 ## Features
 
 - **QR Code Uploads**  
